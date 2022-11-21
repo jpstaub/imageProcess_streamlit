@@ -20,8 +20,8 @@ Outputs:
 
 
 Notes:
-1. Depends on [streamlit](https://pypi.org/project/xgbxml/).
-2. Depends on [opencv](https://test.pypi.org/project/topologicpy/).
+1. Depends on [streamlit](https://pypi.org/project/xgbxml/)
+2. Depends on [opencv](https://test.pypi.org/project/topologicpy/)
 3. Depends on [numpy](https://pypi.org/project/numpy/)
 3. Depends on [Velux Daylight Visualizer](https://www.velux.com/what-we-do/digital-tools/daylight-visualizer) report images 
 4. Processed images can be [used as underlays in design software like Revit](https://www.youtube.com/watch?v=J5ilicWeNCs)
