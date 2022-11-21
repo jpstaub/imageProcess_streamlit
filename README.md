@@ -7,11 +7,12 @@
 #### Output: Cropped Velux Daylight Visualizer report images with transparent background for use as underlays.
 
 ### [To run imageProcess_streamlit webapp locally](https://docs.streamlit.io/knowledge-base/using-streamlit/how-do-i-run-my-streamlit-script)
-	1. Enter correct virtual environment
-	2. Open terminal in virtual environment
-	3. Navigate to folder containing your_script.py
-	4. Run: 'streamlit run your_script.py'
-	5. App opens in a new tab on default browser
+    1. Clone repo
+	2. Enter correct virtual environment
+	3. Open terminal in virtual environment
+	4. Navigate to folder containing your_script.py
+	5. Run: 'streamlit run your_script.py'
+	6. App opens in a new tab on default browser
 
 ### Notes:
 1. Depends on [streamlit](https://pypi.org/project/xgbxml/)
@@ -23,5 +24,5 @@
 ### Functional Development & Test:
     Windows 10 /
     Anaconda / Spyder IDE / Python 3.10 /
-    streamligt 1.15.0 /
+    streamlight 1.15.0 /
     opencv-contrib-python-headless 4.6.0.66
