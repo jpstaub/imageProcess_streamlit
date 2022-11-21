@@ -1,6 +1,6 @@
 ### [Click here for online imageProcess_streamlit webapp](https://jpstaub-imageprocess-streamlit-imageprocess-streamlit-m0xso8.streamlit.app/)
 
-#### Description: This python script is meant to process Velux Daylight Visualizer report images in png format.
+#### Description: This python app processes Velux Daylight Visualizer report images in png or jpg format.
 
 #### Input: Velux Daylight Visualizer daylight factor report images by directory GUI.
 
