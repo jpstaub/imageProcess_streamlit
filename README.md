@@ -1,4 +1,4 @@
-### [imageProcess_streamlit online](https://jpstaub-imageprocess-streamlit-imageprocess-streamlit-m0xso8.streamlit.app/)
+### [Click here for online imageProcess_streamlit webapp](https://jpstaub-imageprocess-streamlit-imageprocess-streamlit-m0xso8.streamlit.app/)
 Process Velux Dayligth Visualizer images.
 
 Purpose: This python script is meant to process Velux Daylight Visualizer report images in png format.
@@ -11,7 +11,7 @@ Inputs:
 Outputs:
 1. Cropped Velux Daylight Visualizer report images with transparent background.
 
-### [Run streamlit app](https://docs.streamlit.io/knowledge-base/using-streamlit/how-do-i-run-my-streamlit-script)
+### [To run imageProcess_streamlit webapp locally](https://docs.streamlit.io/knowledge-base/using-streamlit/how-do-i-run-my-streamlit-script)
 	1. Enter correct virtual environment
 	2. Open terminal in virtual environment
 	3. Navigate to folder containing your_script.py
