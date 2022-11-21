@@ -2,7 +2,7 @@
 
 #### Description: This python app processes Velux Daylight Visualizer report images in png or jpg format.
 
-#### Input: Velux Daylight Visualizer daylight factor report images by directory GUI.
+#### Input: Uploaded Velux Daylight Visualizer daylight factor report images.
 
 #### Output: Cropped Velux Daylight Visualizer report images with transparent background for use as underlays.
 
