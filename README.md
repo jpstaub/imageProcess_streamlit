@@ -13,7 +13,8 @@
 	4. Run: 'streamlit run your_script.py'
 	5. App opens in a new tab on default browser
 
-### Notes:  
+### Notes:
+
     1. Depends on [streamlit](https://pypi.org/project/xgbxml/)
     2. Depends on [opencv](https://test.pypi.org/project/topologicpy/)
     3. Depends on [numpy](https://pypi.org/project/numpy/)
