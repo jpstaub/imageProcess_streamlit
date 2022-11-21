@@ -1,7 +1,7 @@
 ### [Click here for online imageProcess_streamlit webapp](https://jpstaub-imageprocess-streamlit-imageprocess-streamlit-m0xso8.streamlit.app/)
 
 > Description: This python script is meant to process Velux Daylight Visualizer report images in png format.  
-> Input: Velux Daylight Visualizer daylight factor report images. File locations are chosen via a typical directory GUI.  
+> Input: Velux Daylight Visualizer daylight factor report images by directory GUI.  
 > Output: Cropped Velux Daylight Visualizer report images with transparent background for use as underlays.
 
 ### [To run imageProcess_streamlit webapp locally](https://docs.streamlit.io/knowledge-base/using-streamlit/how-do-i-run-my-streamlit-script)
@@ -11,7 +11,7 @@
 	4. Run: 'streamlit run your_script.py'
 	5. App opens in a new tab on default browser
 
-Notes:
+### Notes:  
     1. Depends on [streamlit](https://pypi.org/project/xgbxml/)
     2. Depends on [opencv](https://test.pypi.org/project/topologicpy/)
     3. Depends on [numpy](https://pypi.org/project/numpy/)
