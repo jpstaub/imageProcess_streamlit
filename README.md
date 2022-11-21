@@ -5,11 +5,11 @@ Purpose: This python script is meant to process Velux Daylight Visualizer report
 
 
 Inputs:
-1. Velux Daylight Visualizer report images. File locations are chosen via a typical directory GUI.
+-Velux Daylight Visualizer report images. File locations are chosen via a typical directory GUI.
 
 
 Outputs:
-1. Cropped Velux Daylight Visualizer report images with transparent background.
+-Cropped Velux Daylight Visualizer report images with transparent background.
 
 ### [To run imageProcess_streamlit webapp locally](https://docs.streamlit.io/knowledge-base/using-streamlit/how-do-i-run-my-streamlit-script)
 	1. Enter correct virtual environment
