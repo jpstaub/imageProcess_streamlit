@@ -25,7 +25,7 @@ import streamlit as st
 
 
 # front matter
-title_body = '[imageProcess](https://github.com/jpstaub/Revit-Dynamo-MEP/blob/master)'
+title_body = '[imageProcess](https://github.com/jpstaub/imageProcess_streamlit)'
 sub_body = 'by [Active House USA](https://activehouseusa.org/)'
 
 st.title(title_body)
