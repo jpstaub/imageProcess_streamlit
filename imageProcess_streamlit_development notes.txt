@@ -1,0 +1,33 @@
+22-11-20
+Description: Webapp to process Velux Daylight Visualizer zone images for use as underlays on plans.
+
+Environment:
+	Windows: 10
+	Anaconda Navigator: 2.3.2
+	Python: 3.10
+	Pip: 22.2.2
+	numpy: 1.23.5
+	opencv-contrib-python-headless: 4.6.0.66
+	streamlit: 1.15.0	
+	
+
+streamlit (https://pypi.org/project/streamlit/)
+opencv-python (https://pypi.org/project/opencv-python/)
+	
+# Run streamlit app (https://docs.streamlit.io/knowledge-base/using-streamlit/how-do-i-run-my-streamlit-script)
+	1. Enter correct virtual environment
+	2. Open terminal in virtual environment
+	3. Navigate to folder containing your_script.py
+	4. Run: 'streamlit run your_script.py'
+	5. App opens in a new tab on default browser
+	
+# Streamlit dependencies
+	https://docs.streamlit.io/streamlit-cloud/get-started/deploy-an-app/app-dependencies#add-python-dependencies
+
+# Python list dependencies
+	https://stackoverflow.com/questions/42237072/list-dependencies-in-python
+	
+# pip install documentation
+	https://pip.pypa.io/en/stable/cli/pip_install/#install-extra-index-url
+	https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-environments/?highlight=extras
+	

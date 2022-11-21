@@ -1,0 +1,16 @@
+[runner]
+
+# Allows you to type a variable or string by itself in a single line of Python code to write it to the app.
+# Default: true
+magicEnabled = false
+
+[server]
+
+# List of folders that should not be watched for changes. This impacts both "Run on Save" and @st.cache.
+# Relative paths will be taken as relative to the current working directory.
+# Example: ['/home/user1/env', 'relative/path/to/folder']
+# Default: []
+
+# Max size, in megabytes, for files uploaded with the file_uploader.
+# Default: 200
+maxUploadSize = 5
