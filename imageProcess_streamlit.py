@@ -25,7 +25,7 @@ import streamlit as st
 
 
 # front matter
-title_body = '[Daylight Visualizer Report Image Processor](https://github.com/jpstaub/imageProcess_streamlit)'
+title_body = '[DVR Image Processor](https://github.com/jpstaub/imageProcess_streamlit)'
 sub_body = 'by [Active House USA](https://activehouseusa.org/)'
 
 st.title(title_body)
