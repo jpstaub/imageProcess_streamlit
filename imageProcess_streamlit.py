@@ -130,8 +130,6 @@ for upload_file in upload_files:
         else:      
             crop = crop_image(new_img, x,y,w,h)
             st.image(crop, caption=make_caption(upload_file), output_format='PNG')
-            # st.image(crop, caption=make_caption(upload_file), channels='BGR', output_format='PNG')
-            st.image(crop, caption=make_caption(upload_file), output_format='PNG')
             # images = write_image(upload_file,crop)
             # st.write(crop)
             # retval, buf = cv2.imencode('.png', crop)
