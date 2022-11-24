@@ -67,7 +67,7 @@ def make_mask(img):
 def make_transparent(img, msk):
     img = cv2.cvtColor(img, cv2.COLOR_BGR2BGRA)
     img[:, :, 3] = msk
-    img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
+    img = cv2.cvtColor(img, cv2.COLOR_BGRA2RGBA)
     return img 
     
 # get bounding rectangle of mask shape (should be one around the nonzero pixels)
