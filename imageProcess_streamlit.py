@@ -60,7 +60,7 @@ def make_gray(img):
 
 # make mask image with threshold() function
 def make_mask(img):
-    msk = cv2.threshold(img, 15, 255, cv2.THRESH_BINARY)[1]
+    msk = cv2.threshold(img, 10, 255, cv2.THRESH_BINARY)[1]
     return msk
 
 # make transparent background image by placing the mask into the alpha channel
