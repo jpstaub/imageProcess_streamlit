@@ -1,6 +1,6 @@
 ### [Click here](https://jpstaub-imageprocess-streamlit-imageprocess-streamlit-m0xso8.streamlit.app/) for the Active House USA image webapp
 
-#### Description: The [Active House USA image webapp](https://jpstaub-imageprocess-streamlit-imageprocess-streamlit-m0xso8.streamlit.app/) crops Velux Daylight Visualizer daylight factor report images.
+#### Description: The Active House USA image webapp crops Velux Daylight Visualizer daylight factor report images.
 
 #### Input: [Velux Daylight Visualizer](https://www.velux.com/what-we-do/digital-tools/daylight-visualizer) daylight factor report images.
 
