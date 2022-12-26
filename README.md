@@ -12,10 +12,7 @@
 3. [How to prepare a Revit model for use in Velux Daylight Visualizer](https://www.youtube.com/watch?v=tFcZK5KDHQ4&list=PLkcNb1pNGUW5GCfDUrBKuLWlNFjYQg-M5&index=3)
 4. [How to prepare a SketchuUp model for use in Velux Daylight Visualizer](https://www.youtube.com/watch?v=4ygLQ-jCaO8&list=PLkcNb1pNGUW5GCfDUrBKuLWlNFjYQg-M5&index=4)
 
-### Dependencies:
-1. [streamlit](https://pypi.org/project/xgbxml/)
-2. [opencv](https://test.pypi.org/project/topologicpy/)
-3. [numpy](https://pypi.org/project/numpy/)
+
 
 ### Functional Development & Test:
     Windows 10 /
@@ -30,3 +27,8 @@
 	4. Navigate to folder containing your_script.py
 	5. Run: 'streamlit run your_script.py'
 	6. App opens in a new tab on default browser
+	
+### Dependencies:
+1. [streamlit](https://pypi.org/project/xgbxml/)
+2. [opencv](https://test.pypi.org/project/topologicpy/)
+3. [numpy](https://pypi.org/project/numpy/)
