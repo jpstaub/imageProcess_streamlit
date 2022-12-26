@@ -119,7 +119,7 @@ st.subheader(sub_body)
 
 
 # upload images
-upload_files_label = 'Daylight Visualizer Report Images'
+upload_files_label = 'Velux Daylight Visualizer Daylight Report Images'
 upload_files = st.sidebar.file_uploader(upload_files_label, type = ['jpg','png'], accept_multiple_files=True, on_change = upload_files())
 if not upload_files:
     st.stop()
