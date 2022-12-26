@@ -149,7 +149,7 @@ for upload_file in upload_files:
             
 
 # present results to operator
-msg_success = 'Image processing complete! Please download processed images using the download button below.'
+msg_success = 'Image processing complete!'
 st.sidebar.success(msg_success)
 
 full_zip_in_memory = generate_zip(crop_files)
