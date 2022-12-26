@@ -2,7 +2,7 @@
 
 #### Description: This streamlit webapp crops Velux Daylight Visualizer report images in png or jpg format.
 
-#### Input: Uploaded [Velux Daylight Visualizer](https://www.velux.com/what-we-do/digital-tools/daylight-visualizer) daylight factor report images.
+#### Input: [Velux Daylight Visualizer](https://www.velux.com/what-we-do/digital-tools/daylight-visualizer) daylight factor report images.
 
 #### Output: Cropped Velux Daylight Visualizer report images for [use as underlays in design software like Revit](https://www.youtube.com/watch?v=J5ilicWeNCs).
 
