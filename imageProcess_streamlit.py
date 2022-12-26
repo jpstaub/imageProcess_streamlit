@@ -118,6 +118,7 @@ st.title(title_body)
 st.subheader(sub_body)
 
 
+# upload images
 upload_files_label = 'Daylight Visualizer Report Images'
 upload_files = st.sidebar.file_uploader(upload_files_label, type = ['jpg','png'], accept_multiple_files=True, on_change = upload_files())
 if not upload_files:
@@ -142,13 +143,13 @@ for upload_file in upload_files:
             st.write(msg_error)
         else:
             crop = crop_image(new_img, x,y,w,h)
-            # show cropped images to operator
+            # show cropped images
             st.image(crop, caption=make_caption(upload_file), output_format='PNG')
             # make list of encoded cropped images
             crop_files.append((make_caption(upload_file), encode_image(upload_file, crop)))            
             
 
-# present results to operator
+# present results
 msg_success = 'Image processing complete!'
 st.sidebar.success(msg_success)
 
