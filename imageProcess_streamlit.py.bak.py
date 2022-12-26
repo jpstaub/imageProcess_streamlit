@@ -22,8 +22,8 @@ architectural context to Daylight Factor results.
 import cv2
 import numpy as np
 import streamlit as st
+from zipfile import ZipFile, ZipInfo
 from io import BytesIO
-import zipfile
 
 
 # front matter
@@ -106,14 +106,8 @@ def encode_image(file,img):
 
 # make zip archive
 # https://medium.com/dev-bits/ultimate-guide-for-working-with-i-o-streams-and-zip-archives-in-python-3-6f3cf96dca50
-def generate_zip(files):
-    mem_zip = BytesIO()
-    
-    with zipfile.ZipFile(mem_zip, mode="w", compression=zipfile.ZIP_DEFLATED): 
-        for f in files:
-            zipfile.writestr(f[0], f[1])
-    return mem_zip.getvalue()
-                         
+def create_zip(byte,file):
+    archive = BytesIO()
     
     
 
@@ -127,8 +121,6 @@ upload_files = st.sidebar.file_uploader(upload_files_label, type = ['jpg','png']
 if not upload_files:
     st.stop()
     
-
-crop_files = []
 # make cropped images
 for upload_file in upload_files:
     if filter_file(upload_file):
@@ -146,7 +138,6 @@ for upload_file in upload_files:
             st.write(msg_error)
         else:      
             crop = crop_image(new_img, x,y,w,h)
-            crop_files.append((make_caption(upload_file), crop))
             st.image(crop, caption=make_caption(upload_file), output_format='PNG')
             # images = write_image(upload_file,crop)
             # st.write(crop)
@@ -159,11 +150,9 @@ for upload_file in upload_files:
 # st.write(images[0])
 msg_success = 'Image processing complete! Please drag and drop images to your computer for use.'
 st.sidebar.success(msg_success)
-
-full_zip_in_memory = generate_zip(crop_files)
-st.download_button(
-    label='Download ZIP',
-    data=full_zip_in_memory,
-    file_name='processed.zip',
-    mime='application/zip')
+# st.download_button(
+#     label='Download ZIP',
+#     data=f,
+#     file_name='processed.zip',
+#     mime='application/zip')
 
