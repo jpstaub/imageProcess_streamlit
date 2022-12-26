@@ -6,7 +6,7 @@
 
 #### Output: Cropped Velux Daylight Visualizer daylight factor report images to [use as underlays in design software like Revit](https://www.youtube.com/watch?v=J5ilicWeNCs).
 
-### Velux Daylight Visualizer Model
+### Prepare a model for use in Velux Daylight Visualizer
 1. [How to use the built-in modeler in Velux Daylight Visualizer](https://www.youtube.com/watch?v=A5uMw3-Csow&list=PLkcNb1pNGUW5GCfDUrBKuLWlNFjYQg-M5&index=1)
 2. [How to prepare an ArchiCAD model for use in Velux Daylight Visualizer](https://www.youtube.com/watch?v=Tk4dOsqmcW0&list=PLkcNb1pNGUW5GCfDUrBKuLWlNFjYQg-M5&index=2)
 3. [How to prepare a Revit model for use in Velux Daylight Visualizer](https://www.youtube.com/watch?v=tFcZK5KDHQ4&list=PLkcNb1pNGUW5GCfDUrBKuLWlNFjYQg-M5&index=3)
