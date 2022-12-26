@@ -93,6 +93,7 @@ def write_image(file,img):
 # encode image
 def encode_image(file,img):
     extension = '.' + file.name.split('.')[-1]
+    img = cv2.cvtColor(img, cv2.COLOR_BGRA2RGBA)
     img_encode = cv2.imencode(extension, img)[1]
     data_encode = np.array(img_encode)
     byte_encode = data_encode.tobytes()
