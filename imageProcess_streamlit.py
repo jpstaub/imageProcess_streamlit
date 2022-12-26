@@ -146,7 +146,7 @@ for upload_file in upload_files:
             st.write(msg_error)
         else:      
             crop = crop_image(new_img, x,y,w,h)
-            crop_files.append((make_caption(upload_file), crop))
+            crop_files.append((make_caption(upload_file), encode_image(upload_file, crop)))
             st.image(crop, caption=make_caption(upload_file), output_format='PNG')
             # images = write_image(upload_file,crop)
             # st.write(crop)
