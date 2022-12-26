@@ -14,12 +14,6 @@
 
 
 
-### Functional Development & Test:
-    Windows 10 /
-    Anaconda / Spyder IDE / Python 3.10 /
-    streamlight 1.15.0 /
-    opencv-contrib-python-headless 4.6.0.66
-
 ### [To run webapp locally](https://docs.streamlit.io/knowledge-base/using-streamlit/how-do-i-run-my-streamlit-script)
     1. Clone repo
 	2. Enter correct virtual environment
@@ -32,3 +26,9 @@
 1. [streamlit](https://pypi.org/project/xgbxml/)
 2. [opencv](https://test.pypi.org/project/topologicpy/)
 3. [numpy](https://pypi.org/project/numpy/)
+
+### Functional Development & Test:
+    Windows 10 /
+    Anaconda / Spyder IDE / Python 3.10 /
+    streamlight 1.15.0 /
+    opencv-contrib-python-headless 4.6.0.66
