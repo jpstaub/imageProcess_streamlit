@@ -26,14 +26,8 @@ from io import BytesIO
 import zipfile
 
 
-# front matter
-title_body = '[DVR Image Processor](https://github.com/jpstaub/imageProcess_streamlit)'
-sub_body = 'by [Active House USA](https://activehouseusa.org/)'
 
-st.title(title_body)
-st.subheader(sub_body)
-
-
+# upload files
 def upload_files():
     print("Uploaded image files.")
 
@@ -105,7 +99,7 @@ def encode_image(file,img):
     return byte_encode
 
 # make zip archive
-# https://medium.com/dev-bits/ultimate-guide-for-working-with-i-o-streams-and-zip-archives-in-python-3-6f3cf96dca50
+# https://www.neilgrogan.com/py-bin-zip/
 def generate_zip(files):
     mem_zip = BytesIO()
     
@@ -113,14 +107,16 @@ def generate_zip(files):
         for f in files:
             zf.writestr(f[0], f[1])
     return mem_zip.getvalue()
-                         
-    
-    
 
-# define: file variables with streamlit
-# images = []
-# zipf = zipfile.ZipFile('processed.zip', 'w', zipfile.ZIP_DEFLATED)
-# file_name = 'processed.zip'
+                         
+# streamlit application
+# front matter
+title_body = '[DVR Image Processor](https://github.com/jpstaub/imageProcess_streamlit)'
+sub_body = 'by [Active House USA](https://activehouseusa.org/)'
+
+st.title(title_body)
+st.subheader(sub_body)
+
 
 upload_files_label = 'Daylight Visualizer Report Images'
 upload_files = st.sidebar.file_uploader(upload_files_label, type = ['jpg','png'], accept_multiple_files=True, on_change = upload_files())
@@ -128,8 +124,8 @@ if not upload_files:
     st.stop()
     
 
-crop_files = []
 # make cropped images
+crop_files = []
 for upload_file in upload_files:
     if filter_file(upload_file):
         # st.write(upload_file)
@@ -144,26 +140,23 @@ for upload_file in upload_files:
         except IndexError:
             msg_error = 'The following file has no image to process: ' + upload_file.name
             st.write(msg_error)
-        else:      
+        else:
             crop = crop_image(new_img, x,y,w,h)
-            crop_files.append((make_caption(upload_file), encode_image(upload_file, crop)))
+            # show cropped images to operator
             st.image(crop, caption=make_caption(upload_file), output_format='PNG')
-            # images = write_image(upload_file,crop)
-            # st.write(crop)
-            # retval, buf = cv2.imencode('.png', crop)
-            # zipf.writestr(upload_file.name.split('.')[0] + '_crop.' + upload_file.name.split('.')[-1], buf)
-            # with zipfile.ZipFile(file_name, 'a') as f:
-            #     f.writestr(upload_file.name.split('.')[0] + '_crop.' + upload_file.name.split('.')[-1], buf)
-            # byte_encode = encode_image(upload_file,crop)
-# st.image(images)
-# st.write(images[0])
-msg_success = 'Image processing complete! Please drag and drop images to your computer for use.'
+            # make list of encoded cropped images
+            crop_files.append((make_caption(upload_file), encode_image(upload_file, crop)))            
+            
+
+# present results to operator
+msg_success = 'Image processing complete! Please download processed images using the download button below.'
 st.sidebar.success(msg_success)
 
 full_zip_in_memory = generate_zip(crop_files)
-st.download_button(
-    label='Download ZIP',
+
+st.sidebar.download_button(
+    label='Download processed images',
     data=full_zip_in_memory,
-    file_name='processed.zip',
+    file_name='processed_images.zip',
     mime='application/zip')
 
